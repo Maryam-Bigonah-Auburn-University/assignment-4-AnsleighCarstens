@@ -1,12 +1,14 @@
 #include <iostream> 
-#include <cstdlib> // for exit()
-#include <cctype>  // for tolower()
-
 using namespace std;
 
 class Month
 {
 public:
+  Month(int monthNum);
+  Month();
+  Month(Char fL, char fL, char sL, char tL);
+
+
   //constructor to set month based on first 3 chars of the month name
   Month(char c1, char c2, char c3);   // done, debugged
   //a constructor to set month base on month number, 1 = January etc.
