@@ -5,9 +5,18 @@ using namespace std;
 class Temperature {
 	private:
 		double degreesKelvin,
-		       degreesFahrenheit,
-		       degreesCelsius;
+		double degreesFahrenheit,
+		int degreesCelsius;
 	public:
+	    // Constrcutor
+	    Tempature() : tempaturekelvin (0), tempHistory(nullptr), historySize(0)
+
+	   // Destructor
+	   ~Tempature() {
+		Delete[] tempHistory;
+	    }
+
+		    
 		void setTempKelvin(double degreesKelvin) {  }
 		double getTempKelvin() {  }
 		void setTempCelsius() {  }
