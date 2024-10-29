@@ -16,8 +16,15 @@ class Temperature {
 		Delete[] tempHistory;
 	    }
 
+	   // Mutator functions
+	   void setTempKelvin(double kelvin) {
+		 temperatureKelvin = kelvin;
+		 updateHistory();
+	    }
 		    
-		void setTempKelvin(double degreesKelvin) {  }
+		void setTempKelvin(double degreesKelvin) { 
+			TempertureKelvin = kelvin;
+		}
 		double getTempKelvin() {  }
 		void setTempCelsius() {  }
 		double getTempCelsius() {  } 
